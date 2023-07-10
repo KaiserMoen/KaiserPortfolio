@@ -20,14 +20,12 @@ const [isOpen, setIsOpen] = useState(false);
             <nav className="nav">
                 <div className='logo'>
                     <a href="#" className="brand">KAISER</a> 
-                    <button>toggle</button>
                 </div>
                <ul className='nav_items'>
-                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Home</motion.li>
-                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Services</motion.li>
-                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Experience</motion.li>
-                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Portfolio</motion.li>
-                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Recomendations</motion.li>
+                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Home</motion.li>
+                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Services</motion.li>
+                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Experience</motion.li>
+                 <motion.li className='nav_item' whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Recomendations</motion.li>
                  <motion.li id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.li>
                </ul>
                <span className='ham_button' onClick={toggleMenu}> {isOpen ? <FaTimes/> : <FaBars/>}</span>
@@ -35,12 +33,11 @@ const [isOpen, setIsOpen] = useState(false);
             
                 <div className={`dropdown_menu ${isOpen ? 'open':''}`}>
                     <ul className='nav_items'>
-                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}} >Home</motion.li>
-                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}} >Services</motion.li>
-                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Experience</motion.li>
-                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Portfolio</motion.li>
-                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #69fbfd')}}>Recomendations</motion.li>
-                        <span id = 'contact_dropdown'  className='nav_item'>Let's Connect</span>
+                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}} >Home</motion.li>
+                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}} >Services</motion.li>
+                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Experience</motion.li>
+                        <motion.li whileHover={{scale:1.2,boxShadow:('0px 0px 10px #fff')}}>Recomendations</motion.li>
+                        <motion.span id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                     </ul>
                 </div>
             

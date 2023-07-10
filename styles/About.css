@@ -1,0 +1,23 @@
+:root{
+    --white:#FFF;
+}
+#home_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    
+}
+
+#desc h2{
+    font-weight: 500;
+	font-size: 60px;
+    color:white;
+    letter-spacing: 2px;
+}
+.half_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
