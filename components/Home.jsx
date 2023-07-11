@@ -6,9 +6,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import '/styles/About.css';
 import { motion,useInView,useAnimation } from 'framer-motion';
 import  deved  from '/public/prof.jpg';
-import vec1 from '/public/vector1.png';
-import vec2 from '/public/vector2.png';
-import vec3 from '/public/wave.png';
 function About(){
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
