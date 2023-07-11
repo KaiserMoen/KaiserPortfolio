@@ -12,16 +12,20 @@ function About(){
 
     const mainControls = useAnimation();
     const slideControls = useAnimation();
+    const profileControls = useAnimation();
     
     useEffect(()=>{
         mainControls.start("visible")
         slideControls.start("visible")
+        profileControls.start("visible")
     },[isInView]);
     return(
         <div ref = {ref} id= 'home_cont'>
             <div className = 'half_one'>
+                
                 <div id ="half_one_cont">
                     <div id = 'desc' className='text-center p-10 '>
+                        
                         <motion.h2 variants={{
                             hidden:{opacity: 0 , y: 75},
                             visible:{opacity: 1, y:0}
@@ -43,9 +47,12 @@ function About(){
                 
             </div>
             <div className = 'half_two '>
-                <div className='relative mx-auto rounded-full w-80 h-80 overflow-hidden ' >
+                <motion.div variants={{
+                    hidden: {opacity:0, x:-75},
+                    visible:{opacity:1 , x:0, rotate: 360}
+                }} animate = {profileControls} className='relative mx-auto rounded-full w-80 h-80 overflow-hidden ' >
                     <Image src={deved} layout='fill' objectFit='cover'></Image>
-                </div>
+                </motion.div>
             </div>
         </div>  
     );
