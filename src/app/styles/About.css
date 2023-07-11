@@ -6,30 +6,33 @@
     flex-direction: row;
     justify-content: center;
     padding: 1rem;
-    
 }
 #half_one_cont{
-    padding: 20px;
-    margin: 50px;
+    padding: 5%;
+    margin: 3%;
     background-image: url('https://i.pinimg.com/originals/7a/c0/fe/7ac0fe208e49b6b5519a210b07216a10.jpg');
     background-size: cover;
 }
 #desc h2{
     font-weight: 700;
-	font-size: 60px;
+	font-size: 400%;
     color:white;
     letter-spacing: 2px;
 }
 .half_one{
-    border-radius: 10px;
+    position: relative;
+    border-radius: 0.5%;
     background-color: rgba(0, 0, 0, 0.9);
 }
 .half_two{
+    position: relative;
     background-image: url('https://i.pinimg.com/originals/1e/29/0f/1e290f9ef1c82e282f15adc2e67b2063.jpg');
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
+
+

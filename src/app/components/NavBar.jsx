@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes} from 'react-icons/fa';
 import { render } from 'react-dom'
 import { motion } from 'framer-motion'
-import '/styles/NavBarStyles.css'
+import '../styles/NavBarStyles.css'
 
 
 function NavBar(){

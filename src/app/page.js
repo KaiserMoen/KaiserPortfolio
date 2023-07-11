@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '/components/NavBar.jsx'
-import About from '/components/Home.jsx'
+import NavBar from './components/NavBar.jsx'
+import About from './components/Home.jsx'
 
 function App(){
   return(
