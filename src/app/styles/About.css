@@ -5,7 +5,7 @@
 }
 
 
-#home_cont{
+#about_cont{
     height: var(--full_heigth);
     width: 100%;
     display: flex;
