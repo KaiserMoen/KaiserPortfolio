@@ -32,6 +32,10 @@
 }
 
 #desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: -webkit-fill-available;
     padding: 1rem;
     margin: 1rem;
