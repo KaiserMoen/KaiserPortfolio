@@ -1,10 +1,10 @@
-'use client'
+
 import React, { useState } from 'react';
 import { FaBars, FaTimes} from 'react-icons/fa';
 import { render } from 'react-dom'
 import { motion } from 'framer-motion'
 import '../styles/NavBarStyles.css'
-
+import { MediaQuery } from 'react-responsive';
 
 function NavBar(){
 
@@ -13,10 +13,10 @@ const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  
-
     return(
+      
         <div className='nav_cont'>
+          
             <nav className="nav">
                 <div className='logo'>
                     <a href="#" className="brand">KAISER</a> 
