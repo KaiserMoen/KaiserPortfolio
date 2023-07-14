@@ -6,39 +6,99 @@
 #home_cont{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    padding: 2rem;
     height: var(--full_heigth);
+    width: 100%;
+
 
 }
 .descriptions{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
     padding: 10px;
     margin: 10px;
+    border-radius: 20px;
     
 }
+.vert{
+    font-size: 200%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 600;
+
+}
 .descriptions h1{
-    font-weight: 400;
+    
+    font-weight: 600;
     font-size: 400%;
 }
-
+.dev_text {
+    background: linear-gradient(to right,rgb(104, 247, 183), rgb(10, 41, 95));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+.UX_text{
+    background: linear-gradient(to right, rgb(10, 41, 95), rgb(104, 247, 183));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.web_text{
+    background: linear-gradient(to right,rgb(176, 36, 166), rgb(25, 2, 52));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 .image_cont_prof{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40333px;
-    width:350px;
-    height:450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 5%;
+    width: 100%;
+
+}
+
+.image{
+    height: 70%;
+    width: 50%;
+    border-radius: 99999px;
 }
 
 @media(max-width: 992px){
+    
     .descriptions h1{
-        font-weight: 400;
+        font-weight: 700;
         font-size: 200%;
+    }
+    .vert{
+        font-size: 100%;
+    }
+    .image{
+        height: 624px;
+        width: 465px;
     }
 }
 @media (max-width: 576px) {
+
     .descriptions h1{
-        font-weight: 400;
-        font-size: 100%;
+        font-weight: 700;
+        font-size: 180%;
     }
+
+    .image{
+        height: 80%;
+    }
+
 }
