@@ -13,6 +13,7 @@ function About(){
     const mainControls = useAnimation();
     const slideControls = useAnimation();
     const profileControls = useAnimation();
+
     
     useEffect(()=>{
         mainControls.start("visible")
@@ -44,14 +45,6 @@ function About(){
                     
                 
                 
-            </div>
-            <div className = 'half_two '>
-                <motion.div variants={{
-                    hidden: {opacity:0, x:-75},
-                    visible:{opacity:1 , x:0, rotate: 360}
-                }} animate = {profileControls} className='prof_image_cont' >
-                    <Image src={deved} layout='fill' objectFit='cover'></Image>
-                </motion.div>
             </div>
         </div>  
     );
