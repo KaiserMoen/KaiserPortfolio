@@ -6,6 +6,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import '../styles/About.css';
 import { motion,useInView,useAnimation } from 'framer-motion';
 import  deved  from '/public/prof.jpg';
+import Stats from './Stats.jsx'
 function About(){
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
@@ -41,6 +42,7 @@ function About(){
                             <motion.div whileHover={{rotate:360}}> <FaGithub className='text-purple-900'/></motion.div>
                             <motion.div whileHover={{rotate:360}}><AiOutlineMail className='text-red-900'/></motion.div>
                         </div>
+                        <Stats></Stats>
                     </div>
                     
                 

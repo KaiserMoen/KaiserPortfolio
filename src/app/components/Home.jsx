@@ -8,7 +8,7 @@ function Home(){
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});
     const textControls = useAnimation();
-    const textVariants = {hidden:{opacity: 0, y:-60},visible:{opacity: 1, y:0}}
+    const textVariants = {hidden:{opacity: 0, x:-60},visible:{opacity: 1, x:0}}
     const textTransition = {delay: 0.5, duration:0.5}
     useEffect(()=>{
         textControls.start("visible")
@@ -18,7 +18,7 @@ function Home(){
         <div ref = {ref} id= 'home_cont'>
             <div className='descriptions'>
                 <div className='vert'>
-                    PROGRAM | DESIGN | 
+                    | PROGRAM | DESIGN | 
                 </div>
                 <div>
                     <h1><motion.span 
@@ -35,9 +35,9 @@ function Home(){
                 
             </div>
 
-            <div className='image_cont_prof'>
+            <motion.div variants = {textVariants} initial='hidden' animate ={textControls} transition={textTransition} className='image_cont_prof'>
                 <Image src={prof} className='image'></Image>
-            </div>
+            </motion.div>
             
         </div>  
     );
