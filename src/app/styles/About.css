@@ -17,14 +17,14 @@
 
 .half_one{
     position: relative;
-    border-radius: 0.5%;
+    border-top-left-radius: 0.5%;
+    border-top-right-radius: 0.5%;
     background-color: rgba(0, 0, 0, 0.9);
 }
 .half_two{
     background-color: rgba(0, 0, 0, 0.9);
     position: relative;
     background-size: cover;
-    border-radius: 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@
     font-size: 20px;
     font-weight: 800;
     width: 300px;
-    height: 70%;
+    height: 150px;
     padding: 1rem;
     gap: 0.5rem;
     background-color: rgb(12, 12, 12);
@@ -113,6 +113,34 @@
     line-height: 2rem;
     padding: 0.5rem;
 }
+.skills{
+    display: flex;
+    
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-weight: 1000;
+	font-size: 75px;
+    color:white;
+}
+
+.skill-desc{
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    .skill-info{
+        padding:1rem;
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
+
+    }
+    
+}
+
 
 .robot{
     display: flex;
@@ -121,7 +149,7 @@
     overflow: hidden;
     height: fit-content;
     margin-top: 5%;
-    width: 100%;
+    width: 300px;
 }
 .robot-image{
     width: 200px;

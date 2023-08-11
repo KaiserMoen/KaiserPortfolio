@@ -27,10 +27,18 @@ function About(){
             <div className = 'half_one'>
                     <div id = 'desc'>
                         <section className='desc-first-half'>
+                            <div>
                             <motion.h2 variants={{
                                 hidden:{opacity: 0 , y: 75},
                                 visible:{opacity: 1, y:0}
                             }} initial = 'hidden' animate = {mainControls} transition = {{duration: 0.5,delay:0.25}}>About Me</motion.h2>
+                            <div className = 'logo_cont'>
+                                    <motion.div  whileHover={{rotate:360}}><FaFacebook size={50} className='text-blue-900'/></motion.div>
+                                    <motion.div whileHover={{rotate:360}}> <FaGithub  size={50} className='text-purple-900'/></motion.div>
+                                    <motion.div whileHover={{rotate:360}}><AiOutlineMail size={50} className='text-red-900'/></motion.div>
+                                </div>
+                            </div>
+                           
 
                             <div className='intro'>
                                 <h1>Hi, I am <span className='name'> KAISER</span></h1>
@@ -40,14 +48,11 @@ function About(){
                                 <h1>Passion and Motivation</h1>
                                 <p>My motivation lies in the endless possibilities that arise when technology meets human needs. 
                                     I'm enthusiastic about creating solutions that simplify tasks, streamline processes, and foster better connections between individuals.</p>
-                                <div className = 'logo_cont'>
-                                    <motion.div  whileHover={{rotate:360}}><FaFacebook size={50} className='text-blue-900'/></motion.div>
-                                    <motion.div whileHover={{rotate:360}}> <FaGithub  size={50} className='text-purple-900'/></motion.div>
-                                    <motion.div whileHover={{rotate:360}}><AiOutlineMail size={50} className='text-red-900'/></motion.div>
-                                </div>
+                                
                             </div>
                             
                         </section> 
+                        
                         <section className='expertise'>
                                 <motion.h3 variants = {{
                                         hidden:{opacity:0 , x:-75},
@@ -71,8 +76,23 @@ function About(){
                     </div>
             </div>
             <div className='half_two'>
-                <div>
-
+                
+                <div className='skills'>
+                    <h1>SKILLS</h1>
+                </div>
+                <div className='skill-desc'>
+                    <div className="skill-info">
+                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                    </div>
+                    <div className="skill-info">
+                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                    </div>
+                    <div className="skill-info">
+                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                    </div>
+                    <div className="skill-info">
+                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                    </div>
                 </div>
                 <div className='robot'>
                     <Image src={robot} className='robot-image'></Image>
