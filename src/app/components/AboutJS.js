@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 function getAngle(percent){
     return  (percent / 100) * 360;
 }
@@ -12,6 +13,8 @@ function setProgressPercent(){
         valueContainer.innerText = `${percent}%`
       });
 }
-export function main(){
-    setProgressPercent();
+export function main() {
+    useEffect(() => {
+        setProgressPercent();
+    }, []);
 }
