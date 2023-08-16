@@ -8,7 +8,6 @@ import '../styles/About.css';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
 import  deved  from '/public/prof.jpg';
 import robot from '/public/robot_.png';
-import { main } from './AboutJS.js';
 function About(){
     const ref = useRef(null);
     const refEx = useRef(null);
@@ -24,9 +23,25 @@ function About(){
             mainControls.start("visible");
         }
         if(isInViewExpertise){
+            setProgressPercent();
             slideControls.start("visible");
         }
     },[isInViewAbout,isInViewExpertise, mainControls, slideControls]);
+
+    function getAngle(percent){
+        return  (percent / 100) * 360;
+    }
+    function setProgressPercent(){
+        const progressValueContainer = document.querySelectorAll('.skill-info');
+        progressValueContainer.forEach(container => {
+            const circle = container.querySelector('.circular-progress');
+            const valueContainer = container.querySelector('.progress-value')
+            const percent = valueContainer.getAttribute('value');
+            const angle = getAngle(percent);
+            circle.style.background = `conic-gradient(#7d2ae8 ${angle}deg, #ededed 0deg)`;
+            valueContainer.innerText = `${percent}%`
+          });
+    }
     return(
         <div  id= 'about_cont'>
             <div className = 'half_one'>
@@ -110,7 +125,6 @@ function About(){
                         </div>
                         <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
                     </div>
-                    {main()}
                 </div>
                 
             </div>
