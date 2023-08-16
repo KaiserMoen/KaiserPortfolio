@@ -5,33 +5,38 @@ import { FaFacebook, FaGithub, FaGraduationCap  } from 'react-icons/fa';
 import { AiOutlineMail,AiOutlineBarChart ,AiOutlineDesktop  } from 'react-icons/ai';
 import { FiPenTool } from 'react-icons/fi';
 import '../styles/About.css';
-import { motion,useInView,useAnimation } from 'framer-motion';
+import { motion,useInView,useAnimation, delay } from 'framer-motion';
 import  deved  from '/public/prof.jpg';
 import robot from '/public/robot_.png';
+import { main } from './AboutJS.js';
 function About(){
     const ref = useRef(null);
-    const isInView = useInView(ref, {once:true});
-
+    const refEx = useRef(null);
+    const isInViewAbout = useInView(ref, {once:true});
+    const isInViewExpertise = useInView(refEx, {once:true})
     const mainControls = useAnimation();
     const slideControls = useAnimation();
     const profileControls = useAnimation();
 
     
     useEffect(()=>{
-        mainControls.start("visible")
-        slideControls.start("visible")
-        profileControls.start("visible")
-    },[isInView]);
+        if (isInViewAbout) {
+            mainControls.start("visible");
+        }
+        if(isInViewExpertise){
+            slideControls.start("visible");
+        }
+    },[isInViewAbout,isInViewExpertise, mainControls, slideControls]);
     return(
-        <div ref = {ref} id= 'about_cont'>
+        <div  id= 'about_cont'>
             <div className = 'half_one'>
                     <div id = 'desc'>
                         <section className='desc-first-half'>
                             <div>
-                            <motion.h2 variants={{
+                            <motion.h2  ref = {ref} variants={{
                                 hidden:{opacity: 0 , y: 75},
                                 visible:{opacity: 1, y:0}
-                            }} initial = 'hidden' animate = {mainControls} transition = {{duration: 0.5,delay:0.25}}>About Me</motion.h2>
+                            }} initial = 'hidden' animate = {mainControls}>About Me</motion.h2>
                             <div className = 'logo_cont'>
                                     <motion.div  whileHover={{rotate:360}}><FaFacebook size={50} className='text-blue-900'/></motion.div>
                                     <motion.div whileHover={{rotate:360}}> <FaGithub  size={50} className='text-purple-900'/></motion.div>
@@ -53,23 +58,23 @@ function About(){
                             
                         </section> 
                         
-                        <section className='expertise'>
-                                <motion.h3 variants = {{
+                        <section ref = {refEx} className='expertise'>
+                                <motion.h3  variants = {{
                                         hidden:{opacity:0 , x:-75},
                                         visible:{opacity:1 , x:0}
-                                    }} initial = 'hidden' animate = {slideControls}>
+                                    }} initial = 'hidden' animate = {slideControls} transition={{ duration: 0.5, delay: 0.2 }}>
                                         <FiPenTool size = {30}/>
                                         UX/UI design</motion.h3>
                                 <motion.h3 variants = {{
                                     hidden:{opacity:0 , x:-75},
                                     visible:{opacity:1 , x:0}
-                                }} initial = 'hidden' animate = {slideControls}>
+                                }} initial = 'hidden' animate = {slideControls} transition={{ duration: 0.5, delay: 0.2 }}>
                                     <AiOutlineBarChart size={30}/>
                                     Frontend Dev</motion.h3>
                                 <motion.h3 variants = {{
                                     hidden:{opacity:0 , x:-75},
                                     visible:{opacity:1 , x:0}
-                                }} initial = 'hidden' animate = {slideControls}>
+                                }} initial = 'hidden' animate = {slideControls} transition={{ duration: 0.5, delay: 0.2 }}>
                                     <AiOutlineDesktop size={30}/>
                                     Data Analyst</motion.h3>
                         </section>  
@@ -82,20 +87,30 @@ function About(){
                 </div>
                 <div className='skill-desc'>
                     <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '85'> 85%</span>
+                        </div>
                         <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
                     </div>
                     <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '92'> 85%</span>
+                        </div>
                         <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
                     </div>
                     <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '90'> 85%</span>
+                        </div>
                         <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
                     </div>
                     <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '90'> 85%</span>
+                        </div>
                         <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
                     </div>
-                </div>
-                <div className='robot'>
-                    <Image src={robot} className='robot-image'></Image>
+                    {main()}
                 </div>
                 
             </div>
