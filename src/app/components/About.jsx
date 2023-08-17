@@ -96,34 +96,66 @@ function About(){
                     </div>
             </div>
             <div className='half_two'>
-                
                 <div className='skills'>
                     <h1>SKILLS</h1>
                 </div>
                 <div className='skill-desc'>
-                    <div className="skill-info">
-                        <div className='circular-progress'>
-                                <span className='progress-value' value = '85'> 85%</span>
+                    <div id= 'personal-skill'>
+                        
+                        <div>
+                            <h3><b>SKILLFUL IN MATHEMATICS</b></h3>
+                            <p>My forte lies in swiftly comprehending intricate mathematical algorithms, 
+                                showcasing my adeptness at tackling complex problem-solving tasks with ease and efficiency. 
+                                </p>
                         </div>
-                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                        <div>
+                            <h3><b>TEAM PLAYER</b></h3>
+                            <p> excel in engaging a diverse range of individuals, confidently 
+                                leading within my expertise, while maintaining deep respect for 
+                                every role and actively valuing a wide array of input.</p>
+                        </div>
+                        <div>
+                            <h3><b>FAST AND DILIGENT LEARNER</b></h3>
+                            <p>I consistently prioritize dedicated time for learning, adeptly striking a harmonious
+                                 balance between mastering familiar subjects and embracing the challenges of unfamiliar territories.</p>
+                        </div>
+                        
                     </div>
                     <div className="skill-info">
                         <div className='circular-progress'>
-                                <span className='progress-value' value = '92'> 85%</span>
+                                <span className='progress-value' value = '90'> </span>
                         </div>
-                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                        <h4>Java</h4>
                     </div>
                     <div className="skill-info">
                         <div className='circular-progress'>
-                                <span className='progress-value' value = '90'> 85%</span>
+                                <span className='progress-value' value = '70'> </span>
                         </div>
-                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                        <h4>C++</h4>
                     </div>
                     <div className="skill-info">
                         <div className='circular-progress'>
-                                <span className='progress-value' value = '90'> 85%</span>
+                                <span className='progress-value' value = '92'> </span>
                         </div>
-                        <h4>Lorem Impsum Lorem Ipsum Lorem Ipsum</h4>
+                        <h4>Python</h4>
+                    </div>
+                    <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '90'> </span>
+                        </div>
+                        <h4>HTML & CSS </h4>
+                    </div>
+                    <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '90'> </span>
+                        </div>
+                        <h4>JavaScript & React </h4>
+                    </div>
+                    <div className="skill-info">
+                        <div className='circular-progress'>
+                                <span className='progress-value' value = '85'> </span>
+                        </div>
+                        <h4>SQL</h4>
                     </div>
                 </div>
                 

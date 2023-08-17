@@ -131,44 +131,60 @@
     grid-gap: 1rem;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
-    .skill-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding:1rem;
-        border-radius: 10px;
-        box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
-
-    }
-    .circular-progress{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        height: 100px;
-        width: 100px;
-        background-color: #f0ff;
-        border-radius: 50%;
-        background:conic-gradient(#7d2ae8 0deg, #ededed 0deg);
-
-    }
-    .circular-progress::before{
-        content: "";
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-        background-color: black;
-    }
-    .progress-value{
-        position: relative;
-        color: white;
-    }
-    
 }
+#personal-skill{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding:1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
+    grid-column: 1 / -1;
+    width: 100%;
+}
+#personal-skill div{
+    text-align: center;
+}
+.skill-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    padding:1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
+}
+.skill-info h4{
+    padding: 1rem;
+    font-weight: 700;
+    white-space: pre-line;
+    text-align: center;
+}
+.circular-progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: #f0ff;
+    border-radius: 50%;
+    background:conic-gradient(#7d2ae8 0deg, #ededed 0deg);
+
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+}
+.progress-value{
+    position: relative;
+    color: white;
+}
 
 
 
@@ -208,10 +224,27 @@
         font-size: 80%;
 
     }
+    .half_two{
+        flex-direction: column;
+    }
+    .skills{
+        writing-mode: initial;
+        transform: none;
+    }
+    .skill-desc{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 
-    .robot-image{
-        height: 150px;
-        width: 150px;
+    #personal-skill{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #personal-skill div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
