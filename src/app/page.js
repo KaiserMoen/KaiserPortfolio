@@ -5,11 +5,12 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Main from './components/Main.jsx'
 import { createBrowserRouter, Routes,Route, Link, createRoutesFromElements, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 function App(){
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path = "/" element={<NavBar/>} >
-        <Route index element = {<Main/>}/>
+        <Route index element = {<Home/>}/>
         <Route path = "about" element = {<About/>}/>
         <Route path='project' element = {<Projects/>}/>
       </Route>
