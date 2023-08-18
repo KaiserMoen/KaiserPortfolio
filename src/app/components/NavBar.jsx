@@ -33,8 +33,8 @@ const [isOpen, setIsOpen] = useState(false);
                 <div className={`dropdown_menu ${isOpen ? 'open':''}`}>
                     <ul className='nav_items'>
                         <NavLink to="/" className='nav_item'>Home</NavLink>
-                        <NavLink to="about" className='nav_item'>Services</NavLink>
-                        <NavLink to="project" className='nav_item'>Experience</NavLink>
+                        <NavLink to="about" className='nav_item'>About</NavLink>
+                        <NavLink to="project" className='nav_item'>Projects</NavLink>
                         <NavLink className='nav_item'>Recomendations</NavLink>
                         <motion.span id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                     </ul>
