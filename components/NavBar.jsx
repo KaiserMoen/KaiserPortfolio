@@ -21,10 +21,10 @@ const [isOpen, setIsOpen] = useState(false);
                     <a href="#" className="brand">KAISER</a> 
                 </div>
                <ul className='nav_items'>
-                 <NavLink to = "/" className='nav_item' >Home</NavLink>
-                 <NavLink to="about" className='nav_item'>About</NavLink>
-                 <NavLink to="project"className='nav_item' >Projects</NavLink>
-                 <NavLink className='nav_item' >Recomendations</NavLink>
+                 <li className='nav_item' >Home</li>
+                 <li className='nav_item'>About</li>
+                 <li className='nav_item' >Projects</li>
+                 <li className='nav_item' >Recomendations</li>
                  <motion.span id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                </ul>
                <span className='ham_button' onClick={toggleMenu}> {isOpen ? <FaTimes/> : <FaBars/>}</span>
@@ -32,10 +32,10 @@ const [isOpen, setIsOpen] = useState(false);
             
                 <div className={`dropdown_menu ${isOpen ? 'open':''}`}>
                     <ul className='nav_items'>
-                        <NavLink to="/" className='nav_item'>Home</NavLink>
-                        <NavLink to="about" className='nav_item'>About</NavLink>
-                        <NavLink to="project" className='nav_item'>Projects</NavLink>
-                        <NavLink className='nav_item'>Recomendations</NavLink>
+                        <li className='nav_item'>Home</li>
+                        <li className='nav_item'>About</li>
+                        <li  className='nav_item'>Projects</li>
+                        <li className='nav_item'>Recomendations</li>
                         <motion.span id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                     </ul>
                 </div>

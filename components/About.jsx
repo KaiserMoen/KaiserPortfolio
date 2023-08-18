@@ -5,6 +5,7 @@ import { AiOutlineMail,AiOutlineBarChart ,AiOutlineDesktop  } from 'react-icons/
 import { FiPenTool } from 'react-icons/fi';
 import '../styles/About.css';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
+
 function About(){
     const ref = useRef(null);
     const refEx = useRef(null);
@@ -14,23 +15,16 @@ function About(){
     const slideControls = useAnimation();
     const profileControls = useAnimation();
 
-    
     useEffect(()=>{
         if (isInViewAbout) {
             mainControls.start("visible");
         }
         if(isInViewExpertise){
-            setProgressPercent();
             slideControls.start("visible");
         }
     },[isInViewAbout,isInViewExpertise, mainControls, slideControls]);
 
-    function getAngle(percent){
-        return  (percent / 100) * 360;
-    }
-    function setProgressPercent(){
-        
-    }
+
     return(
         <div  id= 'about_cont'>
             <div className = 'half_one'>

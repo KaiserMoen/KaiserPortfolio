@@ -5,7 +5,7 @@ import NavBar from './NavBar.jsx'
 function Main(){
     return(
         <div>
-
+            <NavBar/>
             <Home></Home>
             <About></About>
             <Projects></Projects>
