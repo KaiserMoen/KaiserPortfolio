@@ -21,7 +21,7 @@ const [isOpen, setIsOpen] = useState(false);
                     <a href="#" className="brand">KAISER</a> 
                 </div>
                <ul className='nav_items'>
-                 <NavLink to="/" className='nav_item' >Home</NavLink>
+                 <NavLink to = "/" className='nav_item' >Home</NavLink>
                  <NavLink to="about" className='nav_item'>About</NavLink>
                  <NavLink to="project"className='nav_item' >Projects</NavLink>
                  <NavLink className='nav_item' >Recomendations</NavLink>

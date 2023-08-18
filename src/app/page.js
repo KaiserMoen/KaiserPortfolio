@@ -18,9 +18,6 @@ function App(){
   return(
     <div className='main'>
       <RouterProvider router = {router}></RouterProvider>
-      <main>
-              <Outlet/>
-            </main>
     </div>
     
   );
