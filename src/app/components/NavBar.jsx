@@ -25,7 +25,7 @@ const [isOpen, setIsOpen] = useState(false);
                  <NavLink to="about" className='nav_item'>About</NavLink>
                  <NavLink to="project"className='nav_item' >Projects</NavLink>
                  <NavLink className='nav_item' >Recomendations</NavLink>
-                 <NavLink id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</NavLink>
+                 <motion.span id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                </ul>
                <span className='ham_button' onClick={toggleMenu}> {isOpen ? <FaTimes/> : <FaBars/>}</span>
             </nav>

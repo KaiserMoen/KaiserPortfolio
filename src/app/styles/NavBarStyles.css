@@ -79,11 +79,10 @@
 	flex-direction: column;
 
 }
-.dropdown_menu NavLink:hover{
+.dropdown_menu .nav_item:hover{
     color: white;
-    
 }
-.dropdown_menu NavLink{
+.dropdown_menu .nav_item{
     padding: 10px;
     color: #d3d3d3 ;
     cursor: pointer;
