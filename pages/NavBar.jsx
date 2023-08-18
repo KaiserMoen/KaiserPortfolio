@@ -6,9 +6,10 @@ import { motion } from 'framer-motion'
 import '../styles/NavBarStyles.css'
 import { MediaQuery } from 'react-responsive';
 import { NavLink, Outlet } from 'react-router-dom';
-function NavBar(){
+import Link from 'next/link'
 
-const [isOpen, setIsOpen] = useState(false);
+function NavBar(){
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,9 +22,9 @@ const [isOpen, setIsOpen] = useState(false);
                     <a href="#" className="brand">KAISER</a> 
                 </div>
                <ul className='nav_items'>
-                 <li className='nav_item' >Home</li>
-                 <li className='nav_item'>About</li>
-                 <li className='nav_item' >Projects</li>
+                 <a href ="#home_cont" className='nav_item' >Home</a>
+                 <a href="#about_cont" className='nav_item'>About</a>
+                 <a href = "#projectMainCont"className='nav_item' >Projects</a>
                  <li className='nav_item' >Recomendations</li>
                  <motion.span id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                </ul>

@@ -16,7 +16,7 @@ function Projects(){
         }
     },[isInView,imageControls])
     return(
-        <motion.div ref = {ref}
+        <motion.div id = "projectMainCont"ref = {ref}
         variants = {{
                     hidden:{opacity:0 , x:-75},
                     visible:{opacity:1 , x:0}
