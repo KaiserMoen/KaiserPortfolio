@@ -1,13 +1,10 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { FaFacebook, FaGithub, FaGraduationCap  } from 'react-icons/fa';
 import { AiOutlineMail,AiOutlineBarChart ,AiOutlineDesktop  } from 'react-icons/ai';
 import { FiPenTool } from 'react-icons/fi';
 import '../styles/About.css';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
-import  deved  from '/public/prof.jpg';
-import robot from '/public/robot_.png';
 function About(){
     const ref = useRef(null);
     const refEx = useRef(null);
