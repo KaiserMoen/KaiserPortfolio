@@ -4,6 +4,7 @@ import Image from 'next/image';
 import '../styles/Home.css';
 import { motion,useInView,useAnimation } from 'framer-motion';
 import  prof  from '/public/prof_edited.jpg';
+
 function Home(){
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true});

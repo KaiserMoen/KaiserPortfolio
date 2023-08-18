@@ -12,7 +12,7 @@
 
 }
 .nav_cont{
-    position:absolute;
+
     padding: 0.5rem 0.5rem; 
     z-index: 100;
     width: 100%;
@@ -34,6 +34,8 @@
     color: white;
     cursor: pointer;
     box-sizing: content-box;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px #fff;
 }
 .nav_item{
     display: flex;
@@ -77,11 +79,11 @@
 	flex-direction: column;
 
 }
-.dropdown_menu li:hover{
+.dropdown_menu NavLink:hover{
     color: white;
     
 }
-.dropdown_menu li{
+.dropdown_menu NavLink{
     padding: 10px;
     color: #d3d3d3 ;
     cursor: pointer;
