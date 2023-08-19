@@ -37,7 +37,7 @@ function Home(){
             </div>
 
             <motion.div variants = {textVariants} initial='hidden' animate ={textControls} transition={textTransition} className='image_cont_prof'>
-                <Image src={prof} className='image'></Image>
+                <Image src={prof} alt = ""  className='image'></Image>
             </motion.div>
             
         </div>  

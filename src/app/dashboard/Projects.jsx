@@ -43,7 +43,7 @@ function Projects(){
                 </div>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} className='inasImage'></Image>
+                        <Image src={inas} alt="" className='inasImage'></Image>
                     </div>
                      
                 </div>
@@ -51,7 +51,7 @@ function Projects(){
             <div className='projectCont left'>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} className='inasImage'></Image>
+                        <Image src={inas} alt="" className='inasImage'></Image>
                     </div>
                         
                 </div>
@@ -74,7 +74,7 @@ function Projects(){
                 </div>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} className='inasImage'></Image>
+                        <Image src={inas} alt="" className='inasImage'></Image>
                     </div>
                      
                 </div>
@@ -82,7 +82,7 @@ function Projects(){
             <div className='projectCont left'>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} className='inasImage'></Image>
+                        <Image src={inas} alt="" className='inasImage'></Image>
                     </div>
                         
                 </div>

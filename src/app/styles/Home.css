@@ -10,7 +10,7 @@
     padding: 2rem;
     height: fit-content;
     width: 100%;
-    background-image: url('https://i.pinimg.com/originals/fe/a0/fa/fea0faa48d36f891d9a22f6c6d1dd436.jpg');
+    background-image: url('../../../public/homeContainerBackround.jpg');
     background-size: cover;
 
 }
