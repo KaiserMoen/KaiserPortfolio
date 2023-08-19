@@ -1,0 +1,10 @@
+{
+    "inaProj": {
+        "About": "Information about the first object",
+        "Languages": ["English", "Spanish", "French"]
+      },
+      "Project2": {
+        "About": "Information about the first object",
+        "Languages": ["English", "Spanish", "French"]
+      }
+}

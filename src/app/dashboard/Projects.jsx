@@ -1,20 +1,31 @@
 'use client'
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef ,useState} from 'react';
 import Image from 'next/image';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
 import '../styles/Project.css';
 import inas from '/public/inashomepage.png';
-import InasTransient from './InasTransient/InasTransient';
 import  Link  from 'next/link';
+import ProjectInfo,{setProjectName}  from './ProjectInfo/page.jsx'
 function Projects(){
     const ref = useRef(null);
     const isInView = useInView(ref,{once:true});
     const imageControls = useAnimation();
-
+    const [projectName, sProjectName] = useState("");
     useEffect(() =>{
         if(isInView){
             imageControls.start("visible");
         }
+
+        const link = document.querySelectorAll(".projLink");
+        link.forEach(link =>{
+            const value = link.getAttribute("value");
+            link.addEventListener("click", event => {
+                sProjectName(value);
+                setProjectName({projName:value});
+            });
+        }
+
+        );
     },[isInView,imageControls])
     return(
         <motion.div id = "projectMainCont"ref = {ref}
@@ -28,7 +39,7 @@ function Projects(){
                     <h1>Ina's Transient House Website</h1>
                     <p>A simple website for a Homestay business in Baguio
                     </p>
-                    <Link href="/dashboard/InasTransient">Learn More</Link>
+                    <Link className='projLink' href="/dashboard/ProjectInfo" value = "inaProj">Learn More</Link>
                 </div>
                 <div className = "imageProj">
                     <div>

@@ -1,10 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import { FaBars, FaTimes} from 'react-icons/fa';
-import { render } from 'react-dom'
 import { motion } from 'framer-motion'
 import '../styles/NavBarStyles.css'
-import { MediaQuery } from 'react-responsive';
 import Link from 'next/link'
 
 function NavBar(){
