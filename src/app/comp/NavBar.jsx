@@ -5,7 +5,6 @@ import { render } from 'react-dom'
 import { motion } from 'framer-motion'
 import '../styles/NavBarStyles.css'
 import { MediaQuery } from 'react-responsive';
-import { NavLink, Outlet } from 'react-router-dom';
 import Link from 'next/link'
 
 function NavBar(){
@@ -41,9 +40,6 @@ function NavBar(){
                     </ul>
                 </div>
         </div>
-        <main>
-          <Outlet/>
-        </main>
       </div>
 
     );

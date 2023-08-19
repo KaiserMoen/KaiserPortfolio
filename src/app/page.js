@@ -1,5 +1,5 @@
 
-import Main from 'pages/Main.jsx'
+import Main from './comp/Main.jsx'
 function App(){
 
   return(

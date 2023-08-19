@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
 import '../styles/Project.css';
 import inas from '/public/inashomepage.png';
-import { Link } from 'react-router-dom';
+import InasTransient from './InasTransient';
+import  Link  from 'next/link';
 function Projects(){
     const ref = useRef(null);
     const isInView = useInView(ref,{once:true});
@@ -27,7 +28,7 @@ function Projects(){
                     <h1>Ina's Transient House Website</h1>
                     <p>A simple website for a Homestay business in Baguio
                     </p>
-                    {/* <Link href="/inas-transient">Visit Website</Link> */}
+                    <Link href="/InasTransient">Learn More</Link>
                 </div>
                 <div className = "imageProj">
                     <div>
