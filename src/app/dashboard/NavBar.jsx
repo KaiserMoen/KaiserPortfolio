@@ -21,9 +21,9 @@ function NavBar(){
                     <a href="#" className="brand">KAISER</a> 
                 </div>
                <ul className='nav_items'>
-                 <a href ="#home_cont" className='nav_item' >Home</a>
-                 <a href="#about_cont" className='nav_item'>About</a>
-                 <a href = "#projectMainCont"className='nav_item' >Projects</a>
+                 <Link href ="/dashboard" className='nav_item' >Home</Link>
+                 <a href="/dashboard#about_cont" className='nav_item'>About</a>
+                 <a href = "/dashboard#projectMainCont"className='nav_item' >Projects</a>
                  <li className='nav_item' >Recomendations</li>
                  <motion.span id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                </ul>
@@ -32,9 +32,9 @@ function NavBar(){
             
                 <div className={`dropdown_menu ${isOpen ? 'open':''}`}>
                     <ul className='nav_items'>
-                        <li className='nav_item'>Home</li>
-                        <li className='nav_item'>About</li>
-                        <li  className='nav_item'>Projects</li>
+                        <Link href = "/dashboard" className='nav_item'>Home</Link>
+                        <a href = "/dashboard#about_cont" className='nav_item'>About</a>
+                        <a  href = "/dashboard#projectMainCont"className='nav_item'>Projects</a>
                         <li className='nav_item'>Recomendations</li>
                         <motion.span id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
                     </ul>

@@ -1,5 +1,5 @@
 
-import Main from './comp/Main.jsx'
+import Main from './dashboard/page.js'
 function App(){
 
   return(
