@@ -3,7 +3,7 @@ import PagesLayout from '../../PagesLayout.jsx';
 import jsonData from "../../ProjectInfo/projdata.json";
 import ProjectInfoTemp from "../ProjectInfoTemp.jsx";
 import Image from 'next/image';
-import home from "../../../../../public/Topicast/Home.png";
+import home from "../../../../../public/Topicast/home.png";
 import res from "../../../../../public/Topicast/res.png";
 export default function Plantaea(){
     const project = jsonData.topicast;

@@ -3,11 +3,11 @@ import PagesLayout from '../../PagesLayout.jsx';
 import jsonData from "../../ProjectInfo/projdata.json";
 import ProjectInfoTemp from "../ProjectInfoTemp.jsx";
 import Image from 'next/image';
-import home from "../../../../../public/Plantaea Final Design/HomeScreen.png";
-import bor from "../../../../../public/Plantaea Final Design/onBoarding.png";
-import pd2 from "../../../../../public/Plantaea Final Design/PlantDetailsScreen-2.png";
-import pd3 from "../../../../../public/Plantaea Final Design/PlantDetailsScreen-3.png";
-import pl from "../../../../../public/Plantaea Final Design/PlantLibrary-All.png";
+import home from "../../../../../public/PlantaeaFinalDesign/HomeScreen.png";
+import bor from "../../../../../public/PlantaeaFinalDesign/onBoarding.png";
+import pd2 from "../../../../../public/PlantaeaFinalDesign/PlantDetailsScreen-2.png";
+import pd3 from "../../../../../public/PlantaeaFinalDesign/PlantDetailsScreen-3.png";
+import pl from "../../../../../public/PlantaeaFinalDesign/PlantLibrary-All.png";
 export default function Plantaea(){
     const project = jsonData.plantaea;
     if (!project) {
