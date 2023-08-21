@@ -11,7 +11,9 @@ p{
     font-size: 0.9rem;
     line-height: 23px;
 }
-
+a{
+    text-decoration: revert;
+}
 h1{
     margin: 0;
     font-size: 20px;
@@ -56,16 +58,19 @@ h1{
 .imageProj::before{
     content: '';
     position: absolute;
-    left: -6.1em;
+    /* left: -6.1em;
     top: 50%;
-    transform: translateY(-50%) rotate(20deg) ;
+    transform: translateY(-50%) rotate(20deg) ; */
+    left: -20%;
+    top: -70%;
+    transform: rotate(20deg);
     background: #111;
     width: 40%;
-    height: 140%;
+    height: 200%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 .left .imageProj::before{
-    transform: translateY(-50%) rotate(-20deg);
+    transform:  rotate(-20deg);
     left: initial;
     right: -6.1em;
 }

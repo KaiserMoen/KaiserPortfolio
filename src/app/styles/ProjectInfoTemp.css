@@ -49,15 +49,22 @@
 }
 .projectImages{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: auto;
+    width: 50%;
+    
 }
 
 .projectImages div{
     padding: 1rem;
-    height: auto;
+    gap: 1rem;
+}
 
-    
+@media (max-width: 576px){
+    .projectImages{
+        width: 90%;
+    }
 }

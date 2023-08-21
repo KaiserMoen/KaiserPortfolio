@@ -3,13 +3,8 @@ import PagesLayout from '../../PagesLayout.jsx';
 import jsonData from "../../ProjectInfo/projdata.json";
 import ProjectInfoTemp from "../ProjectInfoTemp.jsx";
 import Image from 'next/image';
-import home from "../../../../../public/Plantaea Final Design/HomeScreen.png";
-import bor from "../../../../../public/Plantaea Final Design/onBoarding.png";
-import pd2 from "../../../../../public/Plantaea Final Design/PlantDetailsScreen-2.png";
-import pd3 from "../../../../../public/Plantaea Final Design/PlantDetailsScreen-3.png";
-import pl from "../../../../../public/Plantaea Final Design/PlantLibrary-All.png";
 export default function Plantaea(){
-    const project = jsonData.plantaea;
+    const project = jsonData.grade;
     if (!project) {
         return <PagesLayout>Project not found.</PagesLayout>;
       }
@@ -17,7 +12,7 @@ export default function Plantaea(){
         <PagesLayout>
                 <ProjectInfoTemp>
                     <div className='projectDetails'>
-                        <h1>Plantaea: Mobile Application for Philippine Ethnobotany</h1>
+                        <h1>Predicting College Students Optimal Course Load to Achieve Higher Academic Grades</h1>
                         <h3>{project.About}</h3>
                         {project.About.map((about,index) =>(
                             <h3 key = {index}>{about}</h3>
@@ -31,11 +26,6 @@ export default function Plantaea(){
                         </ul>
                     </div>
                     <div className='projectImages'>
-                        <div><Image src={home} alt=''/> </div>
-                        <div><Image src={bor} alt=''/> </div>
-                        <div><Image src={pd2} alt=''/> </div>
-                        <div><Image src={pd3} alt=''/> </div>
-                        <div><Image src={pl} alt=''/> </div>
                     </div>
                 </ProjectInfoTemp>
         </PagesLayout>

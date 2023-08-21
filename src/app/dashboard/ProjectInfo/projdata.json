@@ -4,7 +4,18 @@
         "Languages": ["HTML", "CSS", "JavaScript"]
       },
       "plantaea": {
-        "About": "Plantaea: Mobile Application for Philippine Ethnobotany is a cutting-edge mobile application designed to provide users with an immersive experience in the realm of Philippine ethnobotany. This innovative application seamlessly integrates three powerful features: Image processing, Geographic Information Systems (GIS), and Gamification, creating a comprehensive platform that offers both educational and interactive elements.",
-        "Languages": ["Python", "HTML", "CSS","REACT  NATIVE"]
+        "About": ["Plantaea: Mobile Application for Philippine Ethnobotany is a cutting-edge mobile application designed to provide users with an immersive experience in the realm of Philippine ethnobotany. This innovative application seamlessly integrates three powerful features: Image processing, Geographic Information Systems (GIS),and Gamification, creating a comprehensive platform that offers both educational and interactive elements.","Incorporating machine learning into the project involves the critical task of plant identification, which is achieved through the application of advanced image processing techniques. Within this context, the images are subjected to a series of preprocessing steps that serve to enhance their quality and extract relevant information. These preprocessing steps are crucial in ensuring that the subsequent analysis and feature extraction are performed on accurate and reliable data.The central feature of interest that is extracted from the preprocessed images is the integral curvature. This specific feature holds significant botanical significance as it encapsulates key structural characteristics of plants. The process of gathering and calculating the integral curvature involves meticulously assessing the curvature at various points across the plant's structure. This analysis yields a comprehensive understanding of the plant's physical form and allows for a quantifiable representation of its intricate shape and contours."],
+        "Languages": ["Python", "HTML", "CSS","REACT  NATIVE","flask"]
+      },
+
+      "topicast": {
+        "About":["This study, conducted by an 8-person team, suggests using a topic modeling model to extract decision-making insights from news articles about Baguio. The objective is to make it easier for decision-makers to comprehend the primary issues and problems facing the city in a specific timeframe.","As a proof of concept, the team created a web application that integrated the model and let users view topics based on news articles that are prevalent within a timeframe. These topics can be interpreted by decision-makers, who can then develop strategies in response. Using Python Flask for the backend and React.js for the front end"],
+        "Languages": ["Python", "HTML", "CSS","REACT  NATIVE","flask"]
+      },
+
+      "grade":{
+        "About":["This research addresses the gap in predictive models for improving students' grades by considering student demographics and course load. Using longitudinal data from a four-year university, the study explores the relationship between course load and academic performance. It considers two theories: one suggesting a negative impact of course load due to time constraints, and another suggesting a positive link due to increased commitment. Objectives include identifying demographic factors affecting course load, correlating course load with grades, and determining optimal course loads for different demographics. While acknowledging limitations, such as unaccounted demographics and external factors, the study's significance lies in its potential to enhance higher education success through proactive interventions using machine learning algorithms. By leveraging data mining techniques like educational data mining and deep learning, the research aims to contribute to improving learning and teaching environments and overall educational quality."],
+        "Languages":["Python "]
       }
+      
 }

@@ -6,6 +6,7 @@ import '../styles/Project.css';
 import inas from '/public/inashomepage.png';
 import plantaea from '/public/PlantaeaMain.png';
 import topicMod from '/public/topicModeling.png';
+import grade from '/public/grade.webp';
 import  Link  from 'next/link';
 function Projects(){
     const ref = useRef(null);
@@ -57,6 +58,7 @@ function Projects(){
                     </h1>
                     <p>A simple NLP model used for decision making insights in Baguio
                     </p>
+                    <Link className='projLink' href="/dashboard/ProjectInfo/TopicCast" value = "plantaea">Learn More</Link>
                 </div>
                 <div className = "imageProj">
                     <div>
@@ -68,16 +70,16 @@ function Projects(){
             <div className='projectCont left'>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} alt="" className='inasImage'></Image>
+                        <Image src={grade} alt="" className='inasImage'></Image>
                     </div>
                         
                 </div>
                 <div className="content">
                     <small>Lorem Impus</small>
-                    <h1>Ina's Transient House Website</h1>
-                    <p>Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm
-                    Lorem Ipusm Lorem Ipusm Lorem Ipusm Lorem Ipusm
+                    <h1>Predicting College Students Optimal Course Load to Achieve Higher Academic Grades</h1>
+                    <p>Machine Learning Algorithm to help students
                     </p>
+                    <Link className='projLink' href="/dashboard/ProjectInfo/GradePred" value = "plantaea">Learn More</Link>
                 </div>
             </div>
         </motion.div>
