@@ -1,0 +1,33 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+.contactContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contactContainer form input{
+    height: 40px;
+    padding: 10px;
+    color: black;
+}
+.contactContainer form textarea{
+    padding: 1rem;
+    color: black;
+}
+.contactContainer form button{
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: rgb(8, 180, 228);
+}
