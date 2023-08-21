@@ -1,10 +1,10 @@
 {
     "inaProj": {
-        "About": "Information about the first object",
-        "Languages": ["English", "Spanish", "French"]
+        "About": "The fundamental objective behind the inception of this project revolves around empowering users with comprehensive knowledge about the intricate nuances of Inas Transient. By meticulously curating an all-encompassing resource, we aim to facilitate users in not only garnering a deeper understanding of Inas Transient but also in skillfully navigating its array of services, pinpointing its strategic location, and effortlessly accessing pertinent contact information.",
+        "Languages": ["HTML", "CSS", "JavaScript"]
       },
-      "Project2": {
-        "About": "Information about the first object",
-        "Languages": ["English", "Spanish", "French"]
+      "plantaea": {
+        "About": "Plantaea: Mobile Application for Philippine Ethnobotany is a cutting-edge mobile application designed to provide users with an immersive experience in the realm of Philippine ethnobotany. This innovative application seamlessly integrates three powerful features: Image processing, Geographic Information Systems (GIS), and Gamification, creating a comprehensive platform that offers both educational and interactive elements.",
+        "Languages": ["Python", "HTML", "CSS","REACT  NATIVE"]
       }
 }

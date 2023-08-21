@@ -4,8 +4,9 @@ import Image from 'next/image';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
 import '../styles/Project.css';
 import inas from '/public/inashomepage.png';
+import plantaea from '/public/PlantaeaMain.png';
+import topicMod from '/public/topicModeling.png';
 import  Link  from 'next/link';
-import ProjectInfo,{setProjectName}  from './ProjectInfo/page.jsx'
 function Projects(){
     const ref = useRef(null);
     const isInView = useInView(ref,{once:true});
@@ -16,16 +17,6 @@ function Projects(){
             imageControls.start("visible");
         }
 
-        const link = document.querySelectorAll(".projLink");
-        link.forEach(link =>{
-            const value = link.getAttribute("value");
-            link.addEventListener("click", event => {
-                sProjectName(value);
-                setProjectName({projName:value});
-            });
-        }
-
-        );
     },[isInView,imageControls])
     return(
         <motion.div id = "projectMainCont"ref = {ref}
@@ -39,27 +30,22 @@ function Projects(){
                     <h1>Ina's Transient House Website</h1>
                     <p>A simple website for a Homestay business in Baguio
                     </p>
-                    <Link className='projLink' href="/dashboard/ProjectInfo" value = "inaProj">Learn More</Link>
+                    <Link className='projLink' href="/dashboard/ProjectInfo/InasTransientProj" value = "inaProj">Learn More</Link>
                 </div>
                 <div className = "imageProj">
-                    <div>
-                        <Image src={inas} alt="" className='inasImage'></Image>
-                    </div>
-                     
+                    <Image src={inas} alt="" className='inasImage'></Image>
                 </div>
             </div>
             <div className='projectCont left'>
                 <div className = "imageProj">
-                    <div>
-                        <Image src={inas} alt="" className='inasImage'></Image>
-                    </div>
-                        
+                    <Image src={plantaea} alt="" className='inasImage'></Image>
                 </div>
                 <div className="content">
                     <small>MOBILE APPLICATION/ MACHINE LEARNING</small>
                     <h1>Plantaea: Mobile Application for Philippine Ethnobotany</h1>
                     <p>A mobile application integrating Image processing, GIS, and Gamification
                     </p>
+                    <Link className='projLink' href="/dashboard/ProjectInfo/Plantaea" value = "plantaea">Learn More</Link>
                 </div>
             </div>
 
@@ -74,7 +60,7 @@ function Projects(){
                 </div>
                 <div className = "imageProj">
                     <div>
-                        <Image src={inas} alt="" className='inasImage'></Image>
+                        <Image src={topicMod} alt="" className='inasImage'></Image>
                     </div>
                      
                 </div>

@@ -28,7 +28,6 @@ h1{
 
 .projectCont{
     width: 90%;
-
     color: #f1f1f1;
     display: flex;
     background: #111;
@@ -78,10 +77,12 @@ h1{
     }
     .imageProj, .content{
         width: 100%;
+        
 
     }
-    .inasImage{width: 160%;}
-    
+    .inasImage{width: 160%;
+    height: 9em;}
+
     .imageProj::before{
         width: 120%;
         height: 40%;

@@ -134,13 +134,14 @@
 }
 #personal-skill{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     padding:1rem;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.1);
     grid-column: 1 / -1;
     width: 100%;
+    gap: 10px;
 }
 #personal-skill div{
     text-align: center;
@@ -239,12 +240,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 40px;
     }
     #personal-skill div{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
     }
 
 }
