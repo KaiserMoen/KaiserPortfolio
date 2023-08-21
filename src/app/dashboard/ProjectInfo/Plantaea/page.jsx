@@ -3,7 +3,7 @@ import PagesLayout from '../../PagesLayout.jsx';
 import jsonData from "../../ProjectInfo/projdata.json";
 import ProjectInfoTemp from "../ProjectInfoTemp.jsx";
 import Image from 'next/image';
-import home from "../../../../../public/PlantaeaFinalDesign/HomeScreen.png";
+import home from "../../../../../public/PlantaeaFinalDesign/Homescreen.png";
 import bor from "../../../../../public/PlantaeaFinalDesign/onBoarding.png";
 import pd2 from "../../../../../public/PlantaeaFinalDesign/PlantDetailsScreen-2.png";
 import pd3 from "../../../../../public/PlantaeaFinalDesign/PlantDetailsScreen-3.png";
