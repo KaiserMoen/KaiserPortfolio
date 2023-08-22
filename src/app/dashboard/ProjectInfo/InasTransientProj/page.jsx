@@ -20,7 +20,6 @@ export default function InasTransientProj(){
                         <h1>INAS TRANSIENT WEBSITE</h1>
                         <h3>{project.About}</h3>
 
-                        
                         <ul>
                         <h4>Languages Used: </h4>
                             {project.Languages.map((language, index) => (

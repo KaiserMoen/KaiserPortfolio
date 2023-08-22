@@ -20,7 +20,7 @@ export default function Plantaea(){
                         <h1>Plantaea: Mobile Application for Philippine Ethnobotany</h1>
                         <h3>{project.About}</h3>
                         {project.About.map((about,index) =>(
-                            <h3 key = {index}>{about}</h3>
+                            <h3 key = {index}></h3>
                         )
                         )}
                         <ul>

@@ -1,6 +1,6 @@
 {
     "inaProj": {
-        "About": "The fundamental objective behind the inception of this project revolves around empowering users with comprehensive knowledge about the intricate nuances of Inas Transient. By meticulously curating an all-encompassing resource, we aim to facilitate users in not only garnering a deeper understanding of Inas Transient but also in skillfully navigating its array of services, pinpointing its strategic location, and effortlessly accessing pertinent contact information.",
+        "About": ["The fundamental objective behind the inception of this project revolves around empowering users with comprehensive knowledge about the intricate nuances of Inas Transient. By meticulously curating an all-encompassing resource, we aim to facilitate users in not only garnering a deeper understanding of Inas Transient but also in skillfully navigating its array of services, pinpointing its strategic location, and effortlessly accessing pertinent contact information."],
         "Languages": ["HTML", "CSS", "JavaScript"]
       },
       "plantaea": {

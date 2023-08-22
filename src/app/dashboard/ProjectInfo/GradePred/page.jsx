@@ -15,7 +15,7 @@ export default function Plantaea(){
                         <h1>Predicting College Students Optimal Course Load to Achieve Higher Academic Grades</h1>
                         <h3>{project.About}</h3>
                         {project.About.map((about,index) =>(
-                            <h3 key = {index}>{about}</h3>
+                            <h3 key = {index}></h3>
                         )
                         )}
                         <ul>
