@@ -20,7 +20,17 @@ function Projects(){
 
     },[isInView,imageControls])
     return(
-        <motion.div id = "projectMainCont"ref = {ref}
+        
+        <div id = "projectMainCont">
+        
+        <div className='projectName'>
+
+            <h1>CHECK OUT MY PROJECTS</h1>
+            <div>
+                <p>I've been actively involved in a diverse range of projects spanning web development, machine learning, and mobile app development, showcasing my proficiency in a variety of programming languages and technologies. </p>
+            </div>
+        </div>
+        <motion.div ref = {ref}
         variants = {{
                     hidden:{opacity:0 , x:-75},
                     visible:{opacity:1 , x:0}
@@ -49,7 +59,21 @@ function Projects(){
                     <Link className='projLink' href="/dashboard/ProjectInfo/Plantaea" value = "plantaea">Learn More</Link>
                 </div>
             </div>
-
+            <div className='projectCont left'>
+                <div className = "imageProj">
+                    <div>
+                        <Image src={grade} alt="" className='inasImage'></Image>
+                    </div>
+                        
+                </div>
+                <div className="content">
+                    <small>Machine Learning</small>
+                    <h1>Predicting College Students Optimal Course Load to Achieve Higher Academic Grades</h1>
+                    <p>Machine Learning Algorithm to help students
+                    </p>
+                    <Link className='projLink' href="/dashboard/ProjectInfo/GradePred" value = "plantaea">Learn More</Link>
+                </div>
+            </div>
             <div className='projectCont'>
                 <div className="content">
                     <small>NATURAL LANGUAGE PROCESSING</small>
@@ -67,22 +91,9 @@ function Projects(){
                      
                 </div>
             </div>
-            <div className='projectCont left'>
-                <div className = "imageProj">
-                    <div>
-                        <Image src={grade} alt="" className='inasImage'></Image>
-                    </div>
-                        
-                </div>
-                <div className="content">
-                    <small>Lorem Impus</small>
-                    <h1>Predicting College Students Optimal Course Load to Achieve Higher Academic Grades</h1>
-                    <p>Machine Learning Algorithm to help students
-                    </p>
-                    <Link className='projLink' href="/dashboard/ProjectInfo/GradePred" value = "plantaea">Learn More</Link>
-                </div>
-            </div>
+            
         </motion.div>
+        </div>
     )
 }
 

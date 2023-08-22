@@ -22,8 +22,7 @@ function NavBar(){
                  <Link href ="/dashboard" className='nav_item' >Home</Link>
                  <a href="/dashboard#about_cont" className='nav_item'>About</a>
                  <a href = "/dashboard#projectMainCont"className='nav_item' >Projects</a>
-                 <li className='nav_item' >Recomendations</li>
-                 <motion.span id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
+                 <motion.a href="/dashboard#contactMainCont" id = 'contact'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.a>
                </ul>
                <span className='ham_button' onClick={toggleMenu}> {isOpen ? <FaTimes/> : <FaBars/>}</span>
             </nav>
@@ -33,8 +32,7 @@ function NavBar(){
                         <Link href = "/dashboard" className='nav_item'>Home</Link>
                         <a href = "/dashboard#about_cont" className='nav_item'>About</a>
                         <a  href = "/dashboard#projectMainCont"className='nav_item'>Projects</a>
-                        <li className='nav_item'>Recomendations</li>
-                        <motion.span id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.span>
+                        <motion.a href="/dashboard#contactMainCont" id = 'contact_dropdown'  className='nav_item' whileHover={{scale:1.2}}>Let's Connect</motion.a>
                     </ul>
                 </div>
         </div>

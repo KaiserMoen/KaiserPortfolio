@@ -11,13 +11,35 @@ p{
     font-size: 0.9rem;
     line-height: 23px;
 }
-a{
-    text-decoration: revert;
-}
+
 h1{
     margin: 0;
     font-size: 20px;
     font-weight: 700;
+}
+
+#projectMainCont{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("../../../public/projectContentBack.jpg");
+    background-size: cover;
+}
+#projectMainCont .projectName{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+}
+.projectName h1{
+    font-size: 40px;
+    font-weight: 800;
+    width: 50%;
+    padding: 1rem;
 }
 .project{
 
@@ -26,8 +48,8 @@ h1{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.9);
 }
-
 .projectCont{
     width: 90%;
     color: #f1f1f1;
@@ -35,6 +57,9 @@ h1{
     background: #111;
     margin: 2em 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+.projectCont a{
+    text-decoration: revert;
 }
 .content{
     padding: 1.5rem;
@@ -76,6 +101,9 @@ h1{
 }
 
 @media screen and (max-width: 852px) {
+    .projectName h1{
+        font-size: 150%;
+    }
     .projectCont{
         display: block;
         width: 20em ;

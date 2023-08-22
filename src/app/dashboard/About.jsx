@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import { FaFacebook, FaGithub, FaGraduationCap  } from 'react-icons/fa';
-import { AiOutlineMail,AiOutlineBarChart ,AiOutlineDesktop  } from 'react-icons/ai';
+
+import {AiOutlineBarChart ,AiOutlineDesktop  } from 'react-icons/ai';
 import { FiPenTool } from 'react-icons/fi';
 import '../styles/About.css';
 import { motion,useInView,useAnimation, delay } from 'framer-motion';
@@ -35,7 +35,7 @@ function About(){
             const valueContainer = container.querySelector('.progress-value')
             const percent = valueContainer.getAttribute('value');
             const angle = getAngle(percent);
-            circle.style.background = `conic-gradient(#7d2ae8 ${angle}deg, #ededed 0deg)`;
+            circle.style.background = `conic-gradient(#0d85db ${angle}deg, #ededed 0deg)`;
             valueContainer.innerText = `${percent}%`
           });
     }
@@ -51,14 +51,9 @@ function About(){
                                 hidden:{opacity: 0 , y: 75},
                                 visible:{opacity: 1, y:0}
                             }} initial = 'hidden' animate = {mainControls}>About Me</motion.h2>
-                            <div className = 'logo_cont'>
-                                    <motion.div  whileHover={{rotate:360}}><FaFacebook size={50} className='text-blue-900'/></motion.div>
-                                    <motion.div whileHover={{rotate:360}}> <FaGithub  size={50} className='text-purple-900'/></motion.div>
-                                    <motion.div whileHover={{rotate:360}}><AiOutlineMail size={50} className='text-red-900'/></motion.div>
-                                </div>
+                           
                             </div>
                            
-
                             <div className='intro'>
                                 <h1>Hi, I am <span className='name'> KAISER</span></h1>
                                 <p>A passionate computer science graduate with a drive to integrate technology into everyday life, making it more convenient and accessible for everyone. 
@@ -84,13 +79,13 @@ function About(){
                                     visible:{opacity:1 , x:0}
                                 }} initial = 'hidden' animate = {slideControls} transition={{ duration: 0.5, delay: 0.2 }}>
                                     <AiOutlineBarChart size={30}/>
-                                    Frontend Dev</motion.h3>
+                                    Data Analyst</motion.h3>
                                 <motion.h3 variants = {{
                                     hidden:{opacity:0 , x:-75},
                                     visible:{opacity:1 , x:0}
                                 }} initial = 'hidden' animate = {slideControls} transition={{ duration: 0.5, delay: 0.2 }}>
                                     <AiOutlineDesktop size={30}/>
-                                    Data Analyst</motion.h3>
+                                    Software Development</motion.h3>
                         </section>  
                     </div>
             </div>
@@ -148,7 +143,7 @@ function About(){
                         <div className='circular-progress'>
                                 <span className='progress-value' value = '90'> </span>
                         </div>
-                        <h4>JavaScript & React </h4>
+                        <h4>Js & React </h4>
                     </div>
                     <div className="skill-info">
                         <div className='circular-progress'>

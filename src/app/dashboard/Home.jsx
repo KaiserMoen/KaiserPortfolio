@@ -30,7 +30,7 @@ function Home(){
                     <motion.span variants={textVariants} initial='hidden' animate={textControls} transition = {textTransition} 
                     className='UX_text'>UX/UI DESIGNER</motion.span></h1>
                     {/* <h3>loremipsumloremipsumloremipsumloremipsumloremipsum loremipsumloremipsumloremipsumloremipsumloremipsum</h3> */}
-                    <p className='continue_button'>Continue</p>
+                    <motion.a href = "/dashboard#about_cont" className='continue_button' whileHover={{scale:1.1}}>Continue</motion.a>
                 </div>
     
                 
